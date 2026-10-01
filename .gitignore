@@ -1,0 +1,24 @@
+# Variables locales
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Estado local del importador
+.log_position
+
+# Editores / sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Respaldos de trabajo
+postgres/backup/
