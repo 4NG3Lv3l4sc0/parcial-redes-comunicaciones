@@ -27,6 +27,7 @@ services:
   joomla:
     image: joomla:latest
     container_name: parcial_joomla
+    command: ["/bin/sh", "-c", "chown -R www-data:www-data /var/www/html && exec apache2-foreground"]
     restart: unless-stopped
 
     environment:
