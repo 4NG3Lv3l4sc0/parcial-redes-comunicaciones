@@ -62,7 +62,8 @@ services:
         pip install --quiet psycopg2-binary &&
         python /opt/scripts/importar_logs.py &
         exec start-notebook.py \
-          --ServerApp.token=${JUPYTER_TOKEN} \
+          --ServerApp.token='' \
+          --ServerApp.password='' \
           --ServerApp.base_url=/jupyter \
           --ServerApp.allow_remote_access=True
 
@@ -70,7 +71,6 @@ services:
       - ./jupyter/notebooks:/home/jovyan/work
       - ./jupyter/scripts:/opt/scripts:ro
       - nginx_logs:/logs:ro
-
 
     networks:
       - frontend_net
