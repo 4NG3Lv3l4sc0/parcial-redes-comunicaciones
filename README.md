@@ -88,3 +88,9 @@ No es necesario crear manualmente el datasource ni importar el dashboard.
 El análisis técnico de la arquitectura y del modelo OSI se encuentra en:
 
 INFORME.md
+
+### Credenciales de Grafana
+
+- URL: http://localhost/grafana/
+- Usuario: `admin`
+- Contraseña: `admin`
